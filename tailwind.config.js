@@ -15,6 +15,12 @@ module.exports = {
           dark: "#121212",
         },
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        merriweather: ['Merriweather', 'serif'],
+        inter: ['Inter', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],

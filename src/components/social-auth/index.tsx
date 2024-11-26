@@ -17,25 +17,33 @@ export default function SocialAuth() {
 
   return (
     <>
-      <p className="flex items-center text-center my-6 text-secondary">
-        <span className="flex-grow border-t border-gray-300 mx-2"></span>
-        <span>Or</span>
-        <span className="flex-grow border-t border-gray-300 mx-2"></span>
+      <p className="flex items-center text-center my-4 text-secondary">
+        <span className="flex-grow border-t border-primary mx-2"></span>
+        <span className="font-poppins text-md text-primary">Or</span>
+        <span className="flex-grow border-t border-primary mx-2"></span>
       </p>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center pb-10">
         <button
           onClick={handleGoogleLogin}
-          className="w-13 h-13 bg-white border-none rounded-lg m-10 mx-3 cursor-pointer shadow-md hover:shadow-lg transition duration-300"
+          className="w-12 h-12 bg-white border border-secondary-light rounded-lg mx-4 cursor-pointer shadow-md hover:shadow-lg transition duration-300"
         >
-          <img src="../../assets/google_auth.png" alt="Google Icon" />
+          <img
+            src="../../assets/google_auth.png"
+            alt="Google Icon"
+            className="w-full h-full object-cover rounded-lg"
+          />
         </button>
 
         <button
           onClick={handleFacebookLogin}
-          className="w-13 h-13 bg-white border-none rounded-lg m-10 mx-3 cursor-pointer shadow-md hover:shadow-lg transition duration-300"
+          className="w-12 h-12 bg-white border border-secondary-light rounded-lg mx-4 cursor-pointer shadow-md hover:shadow-lg transition duration-300"
         >
-          <img src="../../assets/facebook_auth.png" alt="Facebook Icon" />
+          <img
+            src="../../assets/facebook_auth.png"
+            alt="Facebook Icon"
+            className="w-full h-full object-cover rounded-lg"
+          />
         </button>
       </div>
     </>
