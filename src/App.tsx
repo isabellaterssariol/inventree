@@ -2,15 +2,23 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Login from "./pages/login";
 import Home from "./pages/home";
+import Register from "./pages/register";
+import { AuthProvider } from "./context/auth-firebase";
+import PrivateRoute from "./components/private-route";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route element={<PrivateRoute />}>
+            <Route path="/" element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 
