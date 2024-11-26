@@ -10,7 +10,7 @@ export default function ButtonAuth({
   return (
     <button
       type={type}
-      className={`w-full py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition duration-300 ${className}`}
+      className={`w-full py-3 text-white rounded-lg hover:bg-primary-dark transition duration-300 bg-primary font-inter ${className}`}
       disabled={loading || disabled}
     >
       {loading ? (

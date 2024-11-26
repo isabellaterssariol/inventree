@@ -38,7 +38,11 @@ export default function AuthForm({
         >
           {children(register, errors)}
 
-          <Button loading={loading} type="submit">
+          <Button
+            loading={loading}
+            type="submit"
+            className="font-inter text-white bg-primary hover:bg-primary-dark"
+          >
             {title}
           </Button>
 
@@ -47,11 +51,11 @@ export default function AuthForm({
 
         <SocialAuth />
 
-        <p className="text-center text-secondary">
+        <p className="text-center text-secondary font-merriweather">
           {description}{" "}
           <Link
             to={redirect}
-            className="text-primary font-bold hover:underline"
+            className="text-primary font-bold hover:underline font-merriweather"
           >
             {signInOrUp}
           </Link>
