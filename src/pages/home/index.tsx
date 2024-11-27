@@ -11,8 +11,6 @@ export default function Home() {
 
   return (
     <main className="home">
-      <Header />
-      
       <section className="user-info mt-6 mb-8 pl-4 pr-4">
         <p className="text-secondary text-base">
           Hi, {user?.displayName || "User"}
@@ -28,8 +26,6 @@ export default function Home() {
         <CategoryStore />
         <ProductStore title="Recent products" />
       </section>
-    
-      <Footer />
     </main>
   );
 }
