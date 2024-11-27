@@ -1,3 +1,3 @@
 export interface CategoryCardProps {
-  categoryId: number;
+  categoryId: string;
 }
