@@ -11,7 +11,7 @@ export default function ProductsPage() {
       <Header />
 
       <section className="p-4">
-        <h1 className="text-3xl font-bold text-secondary-dark my-4">
+        <h1 className="text-3xl font-semibold text-secondary my-4">
           Products
         </h1>
         <div className="flex justify-center space-x-4">
