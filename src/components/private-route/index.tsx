@@ -1,5 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { useAuth } from "../../context/auth-firebase";
+import Header from "../header";
+import Footer from "../footer";
 
 const PrivateRoute = () => {
   const { user } = useAuth();
@@ -8,7 +10,13 @@ const PrivateRoute = () => {
     return <Navigate to="/login" />;
   }
 
-  return <Outlet />;
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
 };
 
 export default PrivateRoute;

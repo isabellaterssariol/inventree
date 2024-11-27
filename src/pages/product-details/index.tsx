@@ -2,7 +2,6 @@ import React from "react";
 import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 import Button from "../../components/button-generic";
 import ColorOptions from "../../components/color-options";
-import Header from "../../components/header";
 import { useParams } from "react-router-dom";
 import { userProducts } from "../../mocks";
 
@@ -18,7 +17,6 @@ export default function ProductDetails() {
 
   return (
     <>
-      <Header />
       <main className="font-poppins p-4">
         <section className="flex justify-center">
           <img

@@ -1,14 +1,11 @@
 import { FaPlus } from "react-icons/fa";
 import ButtonGeneric from "../../components/button-generic";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
 import { userProducts } from "../../mocks";
 import CategoryCard from "../../components/category-card";
 
 export default function CategoriesPage() {
   return (
     <>
-      <Header />
       <section className="p-4">
         <h1 className="text-3xl font-semibold text-secondary my-4">
           Categories
@@ -25,8 +22,6 @@ export default function CategoriesPage() {
           ))}
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

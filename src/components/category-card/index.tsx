@@ -8,7 +8,7 @@ export default function CategoryCard({ categoryId }: CategoryCardProps) {
   );
 
   if (!category) {
-    return null;
+    return <p>Category not found!</p>;
   }
 
   return (

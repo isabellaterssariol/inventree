@@ -1,15 +1,11 @@
 import { FaFilter, FaPlus } from "react-icons/fa";
 import Button from "../../components/button-generic";
-import Footer from "../../components/footer";
-import Header from "../../components/header";
 import { userProducts } from "../../mocks";
 import ProductCard from "../../components/product-card";
 
 export default function ProductsPage() {
   return (
     <main>
-      <Header />
-
       <section className="p-4">
         <h1 className="text-3xl font-semibold text-secondary my-4">
           Products
@@ -27,8 +23,6 @@ export default function ProductsPage() {
           ))}
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }

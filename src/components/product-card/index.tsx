@@ -8,7 +8,7 @@ export default function ProductCard({ productId }: ProductCardProps) {
   );
 
   if (!product) {
-    return null;
+    return <p>Product not found!</p>;
   }
 
   return (
