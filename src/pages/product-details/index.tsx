@@ -7,9 +7,7 @@ import { userProducts } from "../../mocks";
 
 export default function ProductDetails() {
   const { id } = useParams<{ id: string }>();
-  const product = userProducts.products.find(
-    (product) => product.id === parseInt(id!)
-  );
+  const product = userProducts.products.find((product) => product.id === id);
 
   if (!product) {
     return <p>Product not found!</p>;
@@ -44,7 +42,7 @@ export default function ProductDetails() {
           </h2>
           <p className="text-sm text-secondary">{product.description}</p>
 
-          <div className="mt-4 flex gap-4">
+          <div className="mt-4 flex gap-4 mb-12 justify-center">
             <Button text="Edit" icon={AiOutlineEdit} type="button" />
             <Button text="Delete" icon={AiOutlineDelete} type="button" />
           </div>

@@ -1,3 +1,3 @@
 export interface ProductCardProps {
-  productId: number;
+  productId: string;
 }
