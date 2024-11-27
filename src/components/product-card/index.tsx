@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { userProducts } from "../../mocks";
 import { ProductCardProps } from "./types";
@@ -14,7 +13,7 @@ export default function ProductCard({ productId }: ProductCardProps) {
 
   return (
     <div className="flex flex-col items-center bg-white rounded-lg p-3 shadow-lg mb-4">
-      <Link to={"/"} className="w-[6rem] h-[6rem] mb-8">
+      <Link to={`/product/${product.id}`} className="w-[6rem] h-[6rem] mb-8">
         <img
           src="../../assets/generic_product.png"
           alt={product.title}

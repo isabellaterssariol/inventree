@@ -24,7 +24,7 @@ export default function CategoryStore() {
                 {product.title}
               </h1>
               <Link
-                to={"/"}
+                to={`/product/${product.id}`}
                 className="text-primary font-dm-sans text-[0.875rem] font-bold tracking-[0.2px] flex items-center"
               >
                 <p className="text-primary font-dm-sans text-[0.9rem] font-bold tracking-[0.2px] mr-1">
@@ -33,7 +33,8 @@ export default function CategoryStore() {
                 <MdArrowForward size={20} />
               </Link>
             </div>
-            <Link to={"/"}>
+            
+            <Link to={`/product/${product.id}`}>
               <img
                 src={"../../assets/generic_product.png"}
                 alt="Box product"
