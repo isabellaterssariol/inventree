@@ -10,7 +10,7 @@ export default function ErrorPage() {
       />
 
       <h1 className="text-2xl font-bold text-primary-dark mt-6">
-        Oops! Something went wrong
+        Ops! Something went wrong
       </h1>
       <p className="text-secondary-dark font-poppins mt-2">
         Back to the home page to catalog more products
