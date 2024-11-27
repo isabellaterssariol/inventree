@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Register from "./pages/register";
 import { AuthProvider } from "./context/auth-firebase";
 import PrivateRoute from "./components/private-route";
+import ProductsPage from "./pages/products";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route element={<PrivateRoute />}>
             <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ProductsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
